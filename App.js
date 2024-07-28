@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View } from 'react-native';
+import Logginp2 from './src/components/screen/Login/Logginp2';
+import Navegation2 from './src/components/Navegation2';
+import Navegation from './src/components/Navegation';
+import { enableScreens } from 'react-native-screens';
+enableScreens();
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+<Navegation2/>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+   textAlign:"center",
+    backgroundColor: "#CDCDCD",
+  
   },
 });
